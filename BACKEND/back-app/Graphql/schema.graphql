@@ -1,0 +1,41 @@
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    password: String!
+    picturePath: String
+    location: String
+    occupation: String
+}
+
+type Post {
+    id: ID!
+    userId: ID!
+    firstName: String
+    lastName: String
+    location: String
+    description: String
+    picturePath: String
+    userPicturePath: String
+}
+
+type Query {
+    allUsers: [User!]
+    singleUser(id: ID!) : User
+    allPosts: [Post!]
+}
+
+type Mutation {
+    register (
+        firstName: String!
+        lastName: String!
+        email: String!
+        password: String!
+        picturePath: String
+        location: String
+        occupation: String
+    ): User!
+    login(email: String! password: String!): User!
+    createPost(userId: ID! description: String! picturePath: String): Post
+}

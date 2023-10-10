@@ -1,0 +1,11 @@
+[
+    {
+        "id":"1",
+        "firstName": "Oscar",
+        "lastName": "Anillo",
+        "email": "oscar@example.com",
+        "picturePath": "",
+        "location": "Miami-USA",
+        "occupation": "Software Engineer"
+    }
+]
