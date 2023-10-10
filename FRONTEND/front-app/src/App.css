@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
+/* Login */
+.login-div {
+  box-shadow:  3px 5px 10px #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em 1.5em 1em 1em;
+  width: 90%;
+}
+.login-title {
+  color: rgb(0, 102, 255);
+  text-align: left;
+  padding: 1em 0;
+}
+.login-form {
+  text-align: left;
+}
+.login-form input {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 1em 0;
+  outline: none;
+  padding: 1em .5em;
+  width: 100%;
+}
+.login-form input::placeholder {
+  color: #afaeae;
+}
+.login-form button {
+  background-color: rgb(194, 49, 49);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 3px;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+}
+.login-form button:hover {
+  background-color: red;
+}
+.bottom-text {
+  color: #afaeae;
+  padding: 1em 0;
+}
+
+/* Register */
+.reg-div {
+  box-shadow:  3px 5px 10px #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1em 1.5em 1em 1em;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+.reg-title {
+  color: rgb(0, 102, 255);
+  text-align: left;
+  padding: 1em 0;
+}
+.reg-form {
+  text-align: left;
+}
+.reg-form input {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 1em 0;
+  outline: none;
+  padding: 1em 0.5em;
+  width: 100%;
+}
+
+.reg-form button {
+  background-color: rgb(194, 49, 49);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 3px;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+}
+.reg-form button:hover {
+  background-color: red;
+}
+
+/* ProfileCard */
+.profile-div {
+  box-shadow: 3px 5px 8px #eee;
+  padding: 1em;
+  width: 90%;
+}
+.profile-container-div {
+  width: 90%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.profile-img {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+.row-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em 0;
+}
+.icon {
+  color: rgb(148, 148, 148);
+  height: 40px;
+  margin-right: 1rem;
+  width: 40px;
+}
+.user-data {
+  color: #797777;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+.user-description {
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+/* AddPpost */
+.add-post-div {
+  border-radius: 10px;
+  box-shadow: 3px 5px 8px #eee;
+  padding: 1em;
+  margin-top: 1em;
+}
+.add-post-container {
+  margin: 0 auto;
+  text-align: left;
+  width: 90%;
+}
+.add-post-row {
+  display: flex;
+  align-items: center;
+}
+.add-post-row img {
+  border-radius: 100%;
+  height: 60px;
+  margin-right: .5em;
+
+}
+.add-post-container form {
+  padding: 1em 0;
+  width: 100%;
+}
+.add-post-container form input {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  padding: 1em .5em;
+  width: 100%;
+}
+
+.add-post-container form input::placeholder {
+  color: #cac7c7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.add-post-container form button {
+  background-color: rgb(110, 155, 223);
+  border: none;
+  border-radius: 5px;
+  color:#fff;
+  cursor: pointer;
+  letter-spacing: 3px;
+  margin-top: 1em;
+  padding: .8em 1em;
+  text-transform: uppercase;
+}
+.all-posts-div {
+  box-shadow: 3px 5px 8px #eee;
+  margin: 2em auto;
+  padding: 1em;
+  text-align: left;
+  width: 90%;
+}
+.all-posts-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.all-posts-row img {
+  height: 60px;
+  border-radius: 100%;
+}
+
+.ad-div {
+  display: none;
+}
+
+@media(min-width: 1000px) {
+  .home-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 1em;
+    width: 80%;
+  }
+  .home-row > div:nth-child(2) {
+    width: 50%;
+  }
+  .profile-div {
+    padding: .5em;
+    width: 25%;
+  }
+  .profile-img {
+    height: 200px;
+    width: 200px;
+  }
+  .user-description {
+    color: #797777;
+    line-height: 1.6rem;
+    text-align: justify;
+  }
+  .ad-div {
+    box-shadow: 3px 5px 8px #eee;
+    padding: 1em;
+    width: 20%;
+    display: block;
+  }
+  .ad-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .ad-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ad-name {
+    text-transform: uppercase;
+  }
+  .ad-button {
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: .5em 1em;
+  }
+  .ad-text {
+    color: #797777;
+    font-size: .82rem;
+    line-height: 1.5rem;
+    padding-top: 1em;
+    text-align: justify;
+  }
+  
+  /* All Posts */
+  .all-posts-div {
+    border-radius: 10px;
+    padding: 1em;
+    text-align: left;
+    box-shadow: 3px 5px 8px #eee;
+    width: 95%;
+  }
+  .all-posts-row {
+    display: flex;
+    align-items: center;
+  }
+  .all-posts-row img {
+    border-radius: 100%;
+    height: 60px;
+    margin-right: .5em;
+  }
+  .post-user-info {
+    padding: .85em 0;
+  }
+  .post-user-info p {
+    padding-bottom: 1em;
+  }
+
+}
